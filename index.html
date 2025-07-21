@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SVC College of Engineering and Technology - Affiliated to Anna University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/slicknav.min.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/default-css.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" id="triggerColor" href="assets/css/triggerplate/color-0.css">
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <style>
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .counselling-logo {
+      font-size: 15px;
+      color: #194ba7;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      border-left: 2px solid #eee;
+      padding-left: 10px;
+    }
+    .course-meta-thumbnail {
+      display: none !important;
+    }
+    .owl-carousel, .commn-carousel {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      will-change: transform;
+    }
+    .logo-row img, .widget-company img {
+      background: transparent !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+      <div class="loader"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="row d-flex flex-center">
+          <div class="col-sm-8">
+            <div class="ht-address">
+              <ul>
+                <li><i class="fa fa-phone"></i>+91 4563 222264</li>
+                <li><i class="fa fa-envelope"></i>info@svcengg.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="ht-social">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom-inner">
+          <div class="row align-items-center">
+            <div class="col-lg-10 col-sm-10">
+              <div class="logo-row">
+                <a href="index.html">
+                  <img src="assets/images/icon/logo.png" alt="SVC College of Engineering and Technology" style="background:transparent;">
+                </a>
+                <div class="counselling-logo">Counselling Code</div>
+                <a href="index.html">
+                  <img src="assets/images/icon/counse-logo.jpg" alt="SVCET Logo" style="width: 50px; height: auto; background:transparent;">
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-7 d-none d-lg-block">
+              <div class="main-menu">
+                <nav>
+                  <ul id="m_menu_active">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                      <a href="courses.html">Departments</a>
+                      <ul class="submenu">
+                        <li><a href="courses.html">All Departments</a></li>
+                        <li><a href="course-details.html">Department Details</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="blog.html">News</a>
+                      <ul class="submenu">
+                        <li><a href="blog.html">College News</a></li>
+                        <li><a href="blog-details.html">News Details</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-sm-3">
+              <div class="hb-right">
+                <ul>
+                  <li class="search_btn"><i class="fa fa-search"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 d-block d-lg-none">
+              <div id="mobile_menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Apply Now Modal Form -->
+  <div id="applyModal" class="modal" tabindex="-1" style="display:none;position:fixed;z-index:2000;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(0,0,0,0.35);align-items:center;justify-content:center;">
+    <div style="background:#fff;max-width:350px;margin:50px auto;padding:24px;border-radius:10px;box-shadow:0 6px 36px -8px #444;">
+      <h4 class="mb-3">Apply Now</h4>
+      <form id="applyForm" method="POST" action="sendmail.php" autocomplete="off">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+        </div>
+        <div class="form-group mb-2">
+          <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+        </div>
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" placeholder="Mobile Number" name="mobile" pattern="\d{10}" maxlength="10" required>
+        </div>
+        <div class="form-group mb-3">
+          <textarea class="form-control" placeholder="Your Message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        <button type="button" class="btn btn-link btn-block" onclick="document.getElementById('applyModal').style.display='none'">Cancel</button>
+        <div id="applyMsg" style="margin-top:8px;"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main Slider -->
+  <div class="slider-area owl-carousel has-color">
+    <div class="slider_item" style="background: url(assets/images/bg/slider-bg1.jpg) center/cover no-repeat;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-9">
+            <div class="slider-content">
+              <h3>Admissions 2025</h3>
+              <h1><span class="primary-color">Your bright future</span> is Our Mission</h1>
+              <p>Best engineering education in Tamil Nadu, Affiliated to Anna University</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider_item" style="background: url(assets/images/bg/slider-bg2.jpg) center/cover no-repeat;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-9">
+            <div class="slider-content">
+              <h3>Empowering the Next Generation</h3>
+              <h1><span class="primary-color">Achieve Your Dreams</span> at SVCET</h1>
+              <p>SVC College of Engineering and Technology – Affiliated to Anna University, Tenkasi</p>
+              <a class="btn btn-primary btn-round btn-lg mt-5" href="#" id="applyBtn2">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-area ptb--120">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about-left-content">
+            <div class="section-title">
+              <span class="text-uppercase">About Us</span>
+              <h2>Welcome to <span class="primary-color">SVC College of Engineering and Technology</span></h2>
+            </div>
+            <p>SVC College of Engineering and Technology (SVCET), established in 2001, is dedicated to providing quality technical education and holistic growth in the heart of Tamil Nadu. Affiliated to Anna University, we emphasize academic excellence, industry partnerships, and a nurturing campus environment.</p>
+            <a class="btn btn-primary btn-round" href="about.html">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Course Section (updated with all requested courses) -->
+  <div class="course-area pt--120 pb--70">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section-title">
+            <span class="text-uppercase">Build your career</span>
+            <h2>Featured Departments</h2>
+          </div>
+        </div>
+      </div>
+      <div class="commn-carousel owl-carousel card-deck">
+        <div class="card mb-5">
+          <div class="course-thumb">
+            <img src="assets/images/course/cs-img1.jpg" alt="CSE">
+            <span class="cs-price primary-bg">B.E / B.Tech</span>
+          </div>
+          <div class="card-body p-25">
+            <div class="course-meta-title mb-4">
+              <div class="course-meta-text">
+                <h4><a href="course-details.html">Computer Science and Engineering</a></h4>
+              </div>
+            </div>
+            <p>Modern curriculum, industry-oriented training and placement support. Top recruiters from leading IT firms visit every year.</p>
+            <ul class="course-meta-details list-inline w-100">
+              <li><p>Duration</p><span>4 Years</span></li>
+              <li><p>Intake</p><span>120</span></li>
+              <li><p>Accreditation</p><span>AICTE/Anna University</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-5">
+          <div class="course-thumb">
+            <img src="assets/images/course/cs-img2.jpg" alt="ECE">
+            <span class="cs-price primary-bg">B.E / B.Tech</span>
+          </div>
+          <div class="card-body p-25">
+            <div class="course-meta-title mb-4">
+              <div class="course-meta-text">
+                <h4><a href="course-details.html">Electronics and Communication Engineering</a></h4>
+              </div>
+            </div>
+            <p>Practical learning, research-rich environment, and excellent placement record in core and allied industries.</p>
+            <ul class="course-meta-details list-inline w-100">
+              <li><p>Duration</p><span>4 Years</span></li>
+              <li><p>Intake</p><span>120</span></li>
+              <li><p>Accreditation</p><span>AICTE/Anna University</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-5">
+          <div class="course-thumb">
+            <img src="assets/images/course/cs-img3.jpg" alt="EEE">
+            <span class="cs-price primary-bg">B.E / B.Tech</span>
+          </div>
+          <div class="card-body p-25">
+            <div class="course-meta-title mb-4">
+              <div class="course-meta-text">
+                <h4><a href="course-details.html">Electrical and Electronics Engineering</a></h4>
+              </div>
+            </div>
+            <p>Hands-on labs, bridges classical and modern controls, and great for careers in power, automation, and R&D.</p>
+            <ul class="course-meta-details list-inline w-100">
+              <li><p>Duration</p><span>4 Years</span></li>
+              <li><p>Intake</p><span>60</span></li>
+              <li><p>Accreditation</p><span>AICTE/Anna University</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-5">
+          <div class="course-thumb">a
+            <img src="assets/images/course/cs-img2.jpg" alt="Civil">
+            <span class="cs-price primary-bg">B.E / B.Tech</span>
+          </div>
+          <div class="card-body p-25">
+            <div class="course-meta-title mb-4">
+              <div class="course-meta-text">
+                <h4><a href="course-details.html">Civil Engineering</a></h4>
+              </div>
+            </div>
+            <p>Strong foundation in infrastructure, structural design, and green building; excellent placement in government and private sector.</p>
+            <ul class="course-meta-details list-inline w-100">
+              <li><p>Duration</p><span>4 Years</span></li>
+              <li><p>Intake</p><span>60</span></li>
+              <li><p>Accreditation</p><span>AICTE/Anna University</span></li>
+            </ul>
+          </div>
+        
+          <div class="card-body p-25">
+            <div class="course-meta-title mb-4">
+              <div class="course-meta-text">
+                <h4><a href="course-details.html">Mechanical Engineering</a></h4>
+              </div>
+            </div>
+            <p>Strong fundamentals, modern workshops, and vibrant industry connections for project and placement.</p>
+            <ul class="course-meta-details list-inline w-100">
+              <li><p>Duration</p><span>4 Years</span></li>
+              <li><p>Intake</p><span>60</span></li>
+              <li><p>Accreditation</p><span>AICTE/Anna University</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-5">
+          <div class="course-thumb">
+            <img src="assets/images/course/cs-img1.jpg" alt="Artificial Intelligence">
+            <span class="cs-price primary-bg">B.E / B.Tech</span>
+          </div>
+          <div class="card-body p-25">
+            <div class="course-meta-title mb-4">
+              <div class="course-meta-text">
+                <h4><a href="course-details.html">Artificial Intelligence</a></h4>
+              </div>
+            </div>
+            <p>Latest trends in AI, machine learning and data science with practical exposure and research orientation.</p>
+            <ul class="course-meta-details list-inline w-100">
+              <li><p>Duration</p><span>4 Years</span></li>
+              <li><p>Intake</p><span>60</span></li>
+              <li><p>Accreditation</p><span>AICTE/Anna University</span></li>
+            </ul>
+          </div>
+    
+    >
+          <div class="card-body p-25">
+            <div class="course-meta-title mb-4">
+              <div class="course-meta-text">
+                <h4><a href="course-details.html">CSE - Cyber Security</a></h4>
+              </div>
+            </div>
+            <p>Industry-driven course on cyber defense, network security, and digital forensics. Great demand in IT, finance, and government.</p>
+            <ul class="course-meta-details list-inline w-100">
+              <li><p>Duration</p><span>4 Years</span></li>
+              <li><p>Intake</p><span>60</span></li>
+              <li><p>Accreditation</p><span>AICTE/Anna University</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top has-color pt--120 pb--30">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="widget widget-company">
+              <a href="index.html">
+                <img src="assets/images/icon/logo.png" alt="SVC College" style="background:transparent;">
+              </a>
+              <div class="address">
+                <h6>COLLEGE ADDRESS</h6>
+                <p>Veeracholan Village, Puliyangudi Road, Tenkasi-627 861, Tamil Nadu, India.</p>
+              </div>
+              <div class="address">
+                <h6>CONTACT PHONE</h6>
+                <p>+91 4563 222264</p>
+              </div>
+              <div class="address">
+                <h6>EMAIL</h6>
+                <p>info@svcengg.com</p>
+              </div>
+              <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="widget footer-link">
+              <h4 class="fwidget-title mb-5 pb-3 primary-color">Quick Links</h4>
+              <ul>
+                <li><a href="#"><i class="fa fa-arrow-right"></i>About Us</a></li>
+                <li><a href="#"><i class="fa fa-arrow-right"></i>Departments</a></li>
+                <li><a href="#"><i class="fa fa-arrow-right"></i>Placements</a></li>
+                <li><a href="#"><i class="fa fa-arrow-right"></i>News</a></li>
+                <li><a href="#"><i class="fa fa-arrow-right"></i>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="widget widget-opening">
+              <h4 class="fwidget-title mb-5 pb-3 primary-color">Working Hours</h4>
+              <p>Monday to Saturday: 9:00 am - 5:00 pm<br>Sunday: Holiday</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 <span>SVC College of Engineering and Technology</span> - All Rights Reserved. | Designed for client satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.slicknav.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script>
+    document.getElementById('applyBtn2').onclick = function(e){
+      e.preventDefault();
+      document.getElementById('applyModal').style.display='flex';
+    };
+    window.onclick = function(event){
+      if(event.target === document.getElementById('applyModal')){
+        document.getElementById('applyModal').style.display='none';
+      }
+    }
+    document.getElementById('applyForm').onsubmit = function(e){
+      e.preventDefault();
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "sendmail.php", true);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      var form = this;
+      var data = "name=" + encodeURIComponent(form.name.value)
+        + "&email=" + encodeURIComponent(form.email.value)
+        + "&mobile=" + encodeURIComponent(form.mobile.value)
+        + "&message=" + encodeURIComponent(form.message.value);
+      xhr.onreadystatechange = function(){
+        if(xhr.readyState === 4){
+          if(xhr.status === 200 && xhr.responseText.trim() === "success"){
+            document.getElementById('applyMsg').innerHTML = "Thank you! Your request has been sent.";
+            form.reset();
+            setTimeout(function(){
+              document.getElementById('applyModal').style.display='none';
+              document.getElementById('applyMsg').innerHTML='';
+            },1500);
+          } else {
+            document.getElementById('applyMsg').innerHTML = "Sorry, there was an error. Try again later.";
+          }
+        }
+      };
+      xhr.send(data);
+    };
+  </script>
+</body>
+</html>
